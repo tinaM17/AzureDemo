@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">Password@1234</property>
+        <property name="hibernate.connection.url">jdbc:mysql://azure-demo-database.mysql.database.azure.com:3306/myhiber?useSSL=true</property>
+        <property name="hibernate.connection.username">tina</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    	<property name="hbm2ddl.auto">update</property>
+    	<property name="show_sql">true</property>
+    </session-factory>
+</hibernate-configuration>
